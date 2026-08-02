@@ -10,9 +10,9 @@ seed variation must be applied without substituting a different Gecko.
 - Asset count: 25 (`1` base + `24` action frames)
 - Dimensions: base `512x512`; action frames `256x256`; all RGBA PNG
 
-The complete per-file hash contract is maintained in
-`assets/gecko/v8/phenotype-atlas/input-contract.json` in the source repository.
-The contract SHA-256 at publication is
-`adb0ac45f3e55d0d9770d9c7e94c5da38707a60f038f8eb309d030f2f442e9b2`.
+The complete per-file hash contract is `SHA256SUMS` in this directory and is
+also mirrored by the app repository's canonical runtime manifest.
 
-Legacy `gecko/adult/parts` assets are not valid inputs for v8 work.
+The active asset repository contains no legacy Gecko individual. Git history
+is the audit record; restoring `gecko/adult`, flat growth-stage sprites, or
+`geckos/iso` is forbidden.
