@@ -1,0 +1,1803 @@
+{
+  "schemaVersion": 1,
+  "generator": "scripts/generate_gecko_zone_composites.mjs",
+  "alphaContract": "Sharp dest-in order: alpha = floor(previousAlpha * maskAlpha / 255)",
+  "rgbContract": "visible output RGB equals the approved texture/trait RGB",
+  "canvas": {
+    "width": 1024,
+    "height": 1024
+  },
+  "approvedSources": [
+    {
+      "filename": "idle_se_belly.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_belly.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_belly.png",
+      "sha256": "54d882a22e2e03dd122650e96d514d2770b1e99a945c4d9b1f826f107124f4b8",
+      "byteLength": 9014,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_body.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_body.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_body.png",
+      "sha256": "1841008170cc50ad555cc1265c0cf34cb78419f2862622be52ffca0cc743b7e6",
+      "byteLength": 15395,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_eye_iris.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_eye_iris.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_eye_iris.png",
+      "sha256": "cda2f3cdc9ef7b619dd3f4cdd91f6f1a3afd76a3646ba098012844f20779d202",
+      "byteLength": 6014,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_kneecaps.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_kneecaps.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_kneecaps.png",
+      "sha256": "177cf25ecdc1fed0635f831cf86e41949b024b39dfe81ed2dd7f62bebb2c8dc5",
+      "byteLength": 4640,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_lineart_crowned.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_lineart_crowned.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_lineart_crowned.png",
+      "sha256": "373aa44b8fbfa9927482b8d024879e2d3f5fc9431803456e46136ce032add665",
+      "byteLength": 90134,
+      "format": "png",
+      "width": 512,
+      "height": 512,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_lineart_normal.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_lineart_normal.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_lineart_normal.png",
+      "sha256": "52d31eb4a3392409818b29a2b0aa0bf846b47f356e403db5cade1b2cf540dee4",
+      "byteLength": 197013,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_pinstripe_dashed.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_pinstripe_dashed.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_pinstripe_dashed.png",
+      "sha256": "8c2d7e91c2ca7353c34391f24abe31b36614d2d357ffb990da8b655ff02e5875",
+      "byteLength": 10248,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_pinstripe_tail.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_pinstripe_tail.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_pinstripe_tail.png",
+      "sha256": "b0869ae0118ceda8867b9f25831d838e778c52c082f0dfca697eb7aa6c000a9b",
+      "byteLength": 6788,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_pinstripe.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_pinstripe.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_pinstripe.png",
+      "sha256": "0ae4909acf2fbdb872ca187e8180b6d26c61efeb80317ced734c61d7a475b671",
+      "byteLength": 11510,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_portholes.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_portholes.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_portholes.png",
+      "sha256": "608b1df0f2fc15cec4a8089fb4ad1598e10d6dbb5917c7d821bac139a0055a24",
+      "byteLength": 5949,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_reverse_pinstripe.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_reverse_pinstripe.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_reverse_pinstripe.png",
+      "sha256": "2d51137406a3163bdfc7cb79fa77d9dd062855e09df3d4df3979a91afd8fd9d2",
+      "byteLength": 11558,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_spots_dalmatian.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_spots_dalmatian.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_spots_dalmatian.png",
+      "sha256": "26f105b9d4d096089beefd638ae35c1ed7aa8ad1fd1d11ddbe773a4bb388e7f3",
+      "byteLength": 4914,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_spots_super_dalmatian.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_spots_super_dalmatian.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_spots_super_dalmatian.png",
+      "sha256": "35c2257866dba716083a2d96232e2e750a461cd9c60eded093db27581989f982",
+      "byteLength": 8736,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tail_up_belly.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tail_up_belly.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tail_up_belly.png",
+      "sha256": "54d882a22e2e03dd122650e96d514d2770b1e99a945c4d9b1f826f107124f4b8",
+      "byteLength": 9014,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tail_up_body.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tail_up_body.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tail_up_body.png",
+      "sha256": "4ee7c3a98d83e4945440fc0ef06ee9ec36df2aca129c8c8d2426646f93a4abb6",
+      "byteLength": 10039,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tail_up_lineart_normal.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tail_up_lineart_normal.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tail_up_lineart_normal.png",
+      "sha256": "092334408fb164d89964ad2cf6b57bb47744ba5f26f447def8a26d3a7efc6876",
+      "byteLength": 384289,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tail_up_zone_tail.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tail_up_zone_tail.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tail_up_zone_tail.png",
+      "sha256": "601171bdeadd71a64ea77d08aa1a77ff5645f6c98f8976829a34ba49308bb034",
+      "byteLength": 16996,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tex_brindle.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tex_brindle.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tex_brindle.png",
+      "sha256": "099a989f3bb92a0be73b8fa9f7e7aa82abce7b3d85d04030e3eedcb599540d04",
+      "byteLength": 12498,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tex_flame.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tex_flame.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tex_flame.png",
+      "sha256": "2f089c050763836ab46bf94be2a023ebce2d698feaecb0b48803e04626c4058b",
+      "byteLength": 9592,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tex_noise_high.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tex_noise_high.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tex_noise_high.png",
+      "sha256": "dac4d1dda8f1c11c999332e66bfb01b9340ad83c57793e0b2318bdfdd193b7e6",
+      "byteLength": 10933,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tex_noise_low.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tex_noise_low.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tex_noise_low.png",
+      "sha256": "005cc2a1d2e1be83649ef638cdc7202c6ec3bd970f6373001512abe157112e4b",
+      "byteLength": 9653,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tex_noise_med.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tex_noise_med.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tex_noise_med.png",
+      "sha256": "19713b23ec60e98c223536b6e9a4ded7246e1e7b743fc944b854e575c490d796",
+      "byteLength": 11087,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tex_solid.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tex_solid.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tex_solid.png",
+      "sha256": "ee7607d7ae849fba87dfeaa982bca67ad43e301616a1767e986310b6800101dd",
+      "byteLength": 10739,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_tex_tiger.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_tex_tiger.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_tex_tiger.png",
+      "sha256": "f2630d48193dc15ab2bf0160dd39d2e46d597fed6fe8e2810f685f13e94546f9",
+      "byteLength": 13681,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_white_fringe.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_white_fringe.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_white_fringe.png",
+      "sha256": "0798519dd82e2c9688053bc68adb3a18fb404ef425d5867b1f76c6b1f2f413bd",
+      "byteLength": 10361,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_zone_dorsal.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_zone_dorsal.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_zone_dorsal.png",
+      "sha256": "7ecf370b8fbf021acb83c82ec0f48ece5588383873f2809ab554351968617f88",
+      "byteLength": 6642,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_zone_head.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_zone_head.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_zone_head.png",
+      "sha256": "6e668170ffc35cc8cc67a78f24d91b4ef2b21a2ca927d5686b6617cac651be17",
+      "byteLength": 9207,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_zone_limbs.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_zone_limbs.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_zone_limbs.png",
+      "sha256": "0136182a7c8ff4688388f76507ac8c8c259bf34fff001052b3cd0b74bdacca3a",
+      "byteLength": 8825,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_zone_lower_lat.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_zone_lower_lat.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_zone_lower_lat.png",
+      "sha256": "cb1a2ab1894239d2a12fbcb29254a2f86cdffad9f928db44698cd151c6366fda",
+      "byteLength": 7108,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "idle_se_zone_upper_lat.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_zone_upper_lat.png",
+      "outputPath": "gecko/adult/parts/v8/idle_se_zone_upper_lat.png",
+      "sha256": "9b8feac084fc87b7a8e6968de3c33a0cf9349e967d81b1cb66f009c9e028f71b",
+      "byteLength": 6053,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "walk_se_1_belly.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_1_belly.png",
+      "outputPath": "gecko/adult/parts/v8/walk_se_1_belly.png",
+      "sha256": "052e8e74a993294536cba9f008114f9ab25aaaa88dfe91e399111a991584a033",
+      "byteLength": 15928,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "walk_se_1_body.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_1_body.png",
+      "outputPath": "gecko/adult/parts/v8/walk_se_1_body.png",
+      "sha256": "d78748351001859df748390484119c5c4c85638614b018e62ba85faa6ea2cc4c",
+      "byteLength": 17257,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "walk_se_1_lineart_crowned.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_1_lineart_crowned.png",
+      "outputPath": "gecko/adult/parts/v8/walk_se_1_lineart_crowned.png",
+      "sha256": "966690c5e8e55a88eb36ce9b92f040b6918926f255a5c3b3172de18788c490e6",
+      "byteLength": 1035627,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "walk_se_1_lineart_normal.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_1_lineart_normal.png",
+      "outputPath": "gecko/adult/parts/v8/walk_se_1_lineart_normal.png",
+      "sha256": "849c7931e668f73ae89c3fd0672ce5ff4a3ed4d301e9c940f8cb9c92f30ed69b",
+      "byteLength": 991705,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "walk_se_2_belly.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_2_belly.png",
+      "outputPath": "gecko/adult/parts/v8/walk_se_2_belly.png",
+      "sha256": "e4cabc3a5824dcffe9f358b07a93eebf818259401940467ec8ff545440c20fb1",
+      "byteLength": 21028,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "walk_se_2_body.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_2_body.png",
+      "outputPath": "gecko/adult/parts/v8/walk_se_2_body.png",
+      "sha256": "ec347738d3edd2b64ba57850c85154ce8942259b829fabdf4dbfe94076efc4d4",
+      "byteLength": 22889,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "walk_se_2_lineart_crowned.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_2_lineart_crowned.png",
+      "outputPath": "gecko/adult/parts/v8/walk_se_2_lineart_crowned.png",
+      "sha256": "98832d288450fc6cbd588e4e9cbac316c1ef6c457633abecae49c50d5b7e21ff",
+      "byteLength": 1144039,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    },
+    {
+      "filename": "walk_se_2_lineart_normal.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_2_lineart_normal.png",
+      "outputPath": "gecko/adult/parts/v8/walk_se_2_lineart_normal.png",
+      "sha256": "f415b673da3f397ec1e9a66785bf7ab02c61efae1ffb6480065a7c751499a5ce",
+      "byteLength": 1034739,
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "hasAlpha": true,
+      "space": "srgb",
+      "mode": "RGBA",
+      "byteIdentical": true
+    }
+  ],
+  "approvedInputs": {
+    "idle_se_belly.png": "54d882a22e2e03dd122650e96d514d2770b1e99a945c4d9b1f826f107124f4b8",
+    "idle_se_body.png": "1841008170cc50ad555cc1265c0cf34cb78419f2862622be52ffca0cc743b7e6",
+    "idle_se_eye_iris.png": "cda2f3cdc9ef7b619dd3f4cdd91f6f1a3afd76a3646ba098012844f20779d202",
+    "idle_se_kneecaps.png": "177cf25ecdc1fed0635f831cf86e41949b024b39dfe81ed2dd7f62bebb2c8dc5",
+    "idle_se_lineart_crowned.png": "373aa44b8fbfa9927482b8d024879e2d3f5fc9431803456e46136ce032add665",
+    "idle_se_lineart_normal.png": "52d31eb4a3392409818b29a2b0aa0bf846b47f356e403db5cade1b2cf540dee4",
+    "idle_se_pinstripe.png": "0ae4909acf2fbdb872ca187e8180b6d26c61efeb80317ced734c61d7a475b671",
+    "idle_se_pinstripe_dashed.png": "8c2d7e91c2ca7353c34391f24abe31b36614d2d357ffb990da8b655ff02e5875",
+    "idle_se_pinstripe_tail.png": "b0869ae0118ceda8867b9f25831d838e778c52c082f0dfca697eb7aa6c000a9b",
+    "idle_se_portholes.png": "608b1df0f2fc15cec4a8089fb4ad1598e10d6dbb5917c7d821bac139a0055a24",
+    "idle_se_reverse_pinstripe.png": "2d51137406a3163bdfc7cb79fa77d9dd062855e09df3d4df3979a91afd8fd9d2",
+    "idle_se_spots_dalmatian.png": "26f105b9d4d096089beefd638ae35c1ed7aa8ad1fd1d11ddbe773a4bb388e7f3",
+    "idle_se_spots_super_dalmatian.png": "35c2257866dba716083a2d96232e2e750a461cd9c60eded093db27581989f982",
+    "idle_se_tail_up_belly.png": "54d882a22e2e03dd122650e96d514d2770b1e99a945c4d9b1f826f107124f4b8",
+    "idle_se_tail_up_body.png": "4ee7c3a98d83e4945440fc0ef06ee9ec36df2aca129c8c8d2426646f93a4abb6",
+    "idle_se_tail_up_lineart_normal.png": "092334408fb164d89964ad2cf6b57bb47744ba5f26f447def8a26d3a7efc6876",
+    "idle_se_tail_up_zone_tail.png": "601171bdeadd71a64ea77d08aa1a77ff5645f6c98f8976829a34ba49308bb034",
+    "idle_se_tex_brindle.png": "099a989f3bb92a0be73b8fa9f7e7aa82abce7b3d85d04030e3eedcb599540d04",
+    "idle_se_tex_flame.png": "2f089c050763836ab46bf94be2a023ebce2d698feaecb0b48803e04626c4058b",
+    "idle_se_tex_noise_high.png": "dac4d1dda8f1c11c999332e66bfb01b9340ad83c57793e0b2318bdfdd193b7e6",
+    "idle_se_tex_noise_low.png": "005cc2a1d2e1be83649ef638cdc7202c6ec3bd970f6373001512abe157112e4b",
+    "idle_se_tex_noise_med.png": "19713b23ec60e98c223536b6e9a4ded7246e1e7b743fc944b854e575c490d796",
+    "idle_se_tex_solid.png": "ee7607d7ae849fba87dfeaa982bca67ad43e301616a1767e986310b6800101dd",
+    "idle_se_tex_tiger.png": "f2630d48193dc15ab2bf0160dd39d2e46d597fed6fe8e2810f685f13e94546f9",
+    "idle_se_white_fringe.png": "0798519dd82e2c9688053bc68adb3a18fb404ef425d5867b1f76c6b1f2f413bd",
+    "idle_se_zone_dorsal.png": "7ecf370b8fbf021acb83c82ec0f48ece5588383873f2809ab554351968617f88",
+    "idle_se_zone_head.png": "6e668170ffc35cc8cc67a78f24d91b4ef2b21a2ca927d5686b6617cac651be17",
+    "idle_se_zone_limbs.png": "0136182a7c8ff4688388f76507ac8c8c259bf34fff001052b3cd0b74bdacca3a",
+    "idle_se_zone_lower_lat.png": "cb1a2ab1894239d2a12fbcb29254a2f86cdffad9f928db44698cd151c6366fda",
+    "idle_se_zone_upper_lat.png": "9b8feac084fc87b7a8e6968de3c33a0cf9349e967d81b1cb66f009c9e028f71b",
+    "walk_se_1_belly.png": "052e8e74a993294536cba9f008114f9ab25aaaa88dfe91e399111a991584a033",
+    "walk_se_1_body.png": "d78748351001859df748390484119c5c4c85638614b018e62ba85faa6ea2cc4c",
+    "walk_se_1_lineart_crowned.png": "966690c5e8e55a88eb36ce9b92f040b6918926f255a5c3b3172de18788c490e6",
+    "walk_se_1_lineart_normal.png": "849c7931e668f73ae89c3fd0672ce5ff4a3ed4d301e9c940f8cb9c92f30ed69b",
+    "walk_se_2_belly.png": "e4cabc3a5824dcffe9f358b07a93eebf818259401940467ec8ff545440c20fb1",
+    "walk_se_2_body.png": "ec347738d3edd2b64ba57850c85154ce8942259b829fabdf4dbfe94076efc4d4",
+    "walk_se_2_lineart_crowned.png": "98832d288450fc6cbd588e4e9cbac316c1ef6c457633abecae49c50d5b7e21ff",
+    "walk_se_2_lineart_normal.png": "f415b673da3f397ec1e9a66785bf7ab02c61efae1ffb6480065a7c751499a5ce"
+  },
+  "tailUpLayerAudit": [
+    {
+      "kind": "trait",
+      "trait": "pinstripe_full",
+      "source": "idle_se_pinstripe.png",
+      "policy": "reuse",
+      "expectedAlphaPixels": 37140,
+      "expectedOutsideTailUpBodyPixels": 0,
+      "alphaPixels": 37140,
+      "outsideTailUpBodyPixels": 0,
+      "clippedAlphaPixels": 37140,
+      "renderSource": "idle_se_pinstripe.png"
+    },
+    {
+      "kind": "trait",
+      "trait": "pinstripe_dashed",
+      "source": "idle_se_pinstripe_dashed.png",
+      "policy": "reuse",
+      "expectedAlphaPixels": 23676,
+      "expectedOutsideTailUpBodyPixels": 0,
+      "alphaPixels": 23676,
+      "outsideTailUpBodyPixels": 0,
+      "clippedAlphaPixels": 23676,
+      "renderSource": "idle_se_pinstripe_dashed.png"
+    },
+    {
+      "kind": "trait",
+      "trait": "reverse_pinstripe",
+      "source": "idle_se_reverse_pinstripe.png",
+      "policy": "clip",
+      "output": "idle_se_tail_up_reverse_pinstripe.png",
+      "expectedAlphaPixels": 10013,
+      "expectedOutsideTailUpBodyPixels": 298,
+      "alphaPixels": 10013,
+      "outsideTailUpBodyPixels": 298,
+      "clippedAlphaPixels": 9715,
+      "renderSource": "idle_se_tail_up_reverse_pinstripe.png"
+    },
+    {
+      "kind": "trait",
+      "trait": "portholes",
+      "source": "idle_se_portholes.png",
+      "policy": "clip",
+      "output": "idle_se_tail_up_portholes.png",
+      "expectedAlphaPixels": 2305,
+      "expectedOutsideTailUpBodyPixels": 819,
+      "alphaPixels": 2305,
+      "outsideTailUpBodyPixels": 819,
+      "clippedAlphaPixels": 1486,
+      "renderSource": "idle_se_tail_up_portholes.png"
+    },
+    {
+      "kind": "trait",
+      "trait": "dalmatian",
+      "source": "idle_se_spots_dalmatian.png",
+      "policy": "reuse",
+      "expectedAlphaPixels": 2417,
+      "expectedOutsideTailUpBodyPixels": 0,
+      "alphaPixels": 2417,
+      "outsideTailUpBodyPixels": 0,
+      "clippedAlphaPixels": 2417,
+      "renderSource": "idle_se_spots_dalmatian.png"
+    },
+    {
+      "kind": "trait",
+      "trait": "super_dalmatian",
+      "source": "idle_se_spots_super_dalmatian.png",
+      "policy": "clip",
+      "output": "idle_se_tail_up_spots_super_dalmatian.png",
+      "expectedAlphaPixels": 5470,
+      "expectedOutsideTailUpBodyPixels": 741,
+      "alphaPixels": 5470,
+      "outsideTailUpBodyPixels": 741,
+      "clippedAlphaPixels": 4729,
+      "renderSource": "idle_se_tail_up_spots_super_dalmatian.png"
+    },
+    {
+      "kind": "trait",
+      "trait": "white_fringe",
+      "source": "idle_se_white_fringe.png",
+      "policy": "clip",
+      "output": "idle_se_tail_up_white_fringe.png",
+      "expectedAlphaPixels": 3203,
+      "expectedOutsideTailUpBodyPixels": 693,
+      "alphaPixels": 3203,
+      "outsideTailUpBodyPixels": 693,
+      "clippedAlphaPixels": 2510,
+      "renderSource": "idle_se_tail_up_white_fringe.png"
+    },
+    {
+      "kind": "trait",
+      "trait": "kneecaps",
+      "source": "idle_se_kneecaps.png",
+      "policy": "hide-empty-intersection",
+      "expectedAlphaPixels": 233,
+      "expectedOutsideTailUpBodyPixels": 233,
+      "alphaPixels": 233,
+      "outsideTailUpBodyPixels": 233,
+      "clippedAlphaPixels": 0,
+      "renderSource": null
+    },
+    {
+      "kind": "eye",
+      "source": "idle_se_eye_iris.png",
+      "policy": "reuse",
+      "expectedAlphaPixels": 4875,
+      "expectedOutsideTailUpBodyPixels": 0,
+      "alphaPixels": 4875,
+      "outsideTailUpBodyPixels": 0,
+      "clippedAlphaPixels": 4875,
+      "renderSource": "idle_se_eye_iris.png"
+    }
+  ],
+  "tailUpPrimary": {
+    "mask": "idle_se_tail_up_zone_tail.png",
+    "renderMode": "tint-mask",
+    "colorSource": "first-morph-zone",
+    "expectedAlphaPixels": 75365,
+    "expectedAlphaPlaneSha256": "4500fcfb56e4bbec9ab7a524fea92f76f8ffd61dc16421286bb3bd3b87c86a3e",
+    "nonSolidPolicy": "solid primary-color tint because every approved straight-pose texture intersection is empty",
+    "alphaPixels": 75365,
+    "outsideTailUpBodyPixels": 0,
+    "overlapStraightBodyPixels": 0,
+    "tailDeltaMismatchPixels": 0,
+    "alphaPlaneSha256": "4500fcfb56e4bbec9ab7a524fea92f76f8ffd61dc16421286bb3bd3b87c86a3e",
+    "approvedTextureIntersectionPixels": {
+      "brindle": 0,
+      "flame": 0,
+      "noise_high": 0,
+      "noise_low": 0,
+      "noise_med": 0,
+      "solid": 0,
+      "tiger": 0
+    }
+  },
+  "outputs": [
+    {
+      "filename": "idle_se_pattern_dorsal_brindle.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "dorsal",
+      "texture": "brindle",
+      "rgbSource": "idle_se_tex_brindle.png",
+      "masks": [
+        "idle_se_zone_dorsal.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_brindle.png",
+        "idle_se_zone_dorsal.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "94430741a7216d39b6b6d7f89f1ae860e89b470ecfba5bc2c96720b5e442bb71",
+      "qc": {
+        "alphaPixels": 5378,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 199,
+          "minY": 397,
+          "maxX": 646,
+          "maxY": 666
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_dorsal_solid.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "dorsal",
+      "texture": "solid",
+      "rgbSource": "idle_se_tex_solid.png",
+      "masks": [
+        "idle_se_zone_dorsal.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_solid.png",
+        "idle_se_zone_dorsal.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "6cbff3b64d422a5dc4e55c71d77e234c8212cd959fc68018700399c1648f80c5",
+      "qc": {
+        "alphaPixels": 19552,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 175,
+          "minY": 394,
+          "maxX": 678,
+          "maxY": 667
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_dorsal_tiger.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "dorsal",
+      "texture": "tiger",
+      "rgbSource": "idle_se_tex_tiger.png",
+      "masks": [
+        "idle_se_zone_dorsal.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_tiger.png",
+        "idle_se_zone_dorsal.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "d8a753af5956ac1ed1b98083aea731c728c06c3441a8d26c89f9a661b7eb02f4",
+      "qc": {
+        "alphaPixels": 7300,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 199,
+          "minY": 397,
+          "maxX": 678,
+          "maxY": 662
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_limbs_noise_high.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "limbs",
+      "texture": "noise_high",
+      "rgbSource": "idle_se_tex_noise_high.png",
+      "masks": [
+        "idle_se_zone_limbs.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_noise_high.png",
+        "idle_se_zone_limbs.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "94e136cd51a0dd0052e178f5d729554229f3e6b83d6316cc81da8ab5ead7a03a",
+      "qc": {
+        "alphaPixels": 34515,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 224,
+          "minY": 367,
+          "maxX": 681,
+          "maxY": 790
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_limbs_noise_low.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "limbs",
+      "texture": "noise_low",
+      "rgbSource": "idle_se_tex_noise_low.png",
+      "masks": [
+        "idle_se_zone_limbs.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_noise_low.png",
+        "idle_se_zone_limbs.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "9a972a1bb34252671a32b6cec43038536aa2fb436f0137df9a0de2c66c8c20a0",
+      "qc": {
+        "alphaPixels": 15599,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 224,
+          "minY": 367,
+          "maxX": 681,
+          "maxY": 779
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_lower_lat_brindle.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "lower_lat",
+      "texture": "brindle",
+      "rgbSource": "idle_se_tex_brindle.png",
+      "masks": [
+        "idle_se_zone_lower_lat.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_brindle.png",
+        "idle_se_zone_lower_lat.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "ae4cb7df157799cadb23948d4e15662505821d6d555de3c298e62ee8c2052434",
+      "qc": {
+        "alphaPixels": 3274,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 176,
+          "minY": 463,
+          "maxX": 681,
+          "maxY": 796
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_lower_lat_noise_high.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "lower_lat",
+      "texture": "noise_high",
+      "rgbSource": "idle_se_tex_noise_high.png",
+      "masks": [
+        "idle_se_zone_lower_lat.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_noise_high.png",
+        "idle_se_zone_lower_lat.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "61d179376bff74aa19a8b924ced8f5ba40c73cd7caf15382d9b1527a3a66005c",
+      "qc": {
+        "alphaPixels": 10070,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 176,
+          "minY": 463,
+          "maxX": 681,
+          "maxY": 796
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_lower_lat_noise_med.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "lower_lat",
+      "texture": "noise_med",
+      "rgbSource": "idle_se_tex_noise_med.png",
+      "masks": [
+        "idle_se_zone_lower_lat.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_noise_med.png",
+        "idle_se_zone_lower_lat.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "41dc2d410aeeb8bfb8d2f800a8924974494e8007cfa59e2f8869b9e887d6b7b6",
+      "qc": {
+        "alphaPixels": 8847,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 176,
+          "minY": 463,
+          "maxX": 681,
+          "maxY": 796
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_lower_lat_tiger.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "lower_lat",
+      "texture": "tiger",
+      "rgbSource": "idle_se_tex_tiger.png",
+      "masks": [
+        "idle_se_zone_lower_lat.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_tiger.png",
+        "idle_se_zone_lower_lat.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "fc8eae72f8e20262d8cc9e430e164020b1b072b41fd3ea9a5cee40cc60a4e5bb",
+      "qc": {
+        "alphaPixels": 5468,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 176,
+          "minY": 463,
+          "maxX": 681,
+          "maxY": 796
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_upper_lat_brindle.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "upper_lat",
+      "texture": "brindle",
+      "rgbSource": "idle_se_tex_brindle.png",
+      "masks": [
+        "idle_se_zone_upper_lat.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_brindle.png",
+        "idle_se_zone_upper_lat.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "c5abba0bd32c8f30f8d4fdb558a18af36d77eba0511e14e8bc2fb1bc8dcde28c",
+      "qc": {
+        "alphaPixels": 5023,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 234,
+          "minY": 440,
+          "maxX": 680,
+          "maxY": 666
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_upper_lat_flame.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "upper_lat",
+      "texture": "flame",
+      "rgbSource": "idle_se_tex_flame.png",
+      "masks": [
+        "idle_se_zone_upper_lat.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_flame.png",
+        "idle_se_zone_upper_lat.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "b1088f05d444b4cf256eaba724ddb83bde5fdc745f1350e4a85b84ce57ec65d8",
+      "qc": {
+        "alphaPixels": 12642,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 232,
+          "minY": 440,
+          "maxX": 681,
+          "maxY": 670
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_upper_lat_noise_high.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "upper_lat",
+      "texture": "noise_high",
+      "rgbSource": "idle_se_tex_noise_high.png",
+      "masks": [
+        "idle_se_zone_upper_lat.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_noise_high.png",
+        "idle_se_zone_upper_lat.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "a26e5339336fca3eef5f5fd2b29c24bac17d42dac9b4b0b3e90b408610e0441e",
+      "qc": {
+        "alphaPixels": 18447,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 212,
+          "minY": 440,
+          "maxX": 681,
+          "maxY": 672
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_upper_lat_solid.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "upper_lat",
+      "texture": "solid",
+      "rgbSource": "idle_se_tex_solid.png",
+      "masks": [
+        "idle_se_zone_upper_lat.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_solid.png",
+        "idle_se_zone_upper_lat.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "15d65a9e028e17929fbea6cf184ea3e3d956b32b6389a927ad0439be8bd77bf4",
+      "qc": {
+        "alphaPixels": 18771,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 212,
+          "minY": 440,
+          "maxX": 681,
+          "maxY": 672
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_pattern_upper_lat_tiger.png",
+      "kind": "zone-texture",
+      "pose": "idle_se",
+      "zone": "upper_lat",
+      "texture": "tiger",
+      "rgbSource": "idle_se_tex_tiger.png",
+      "masks": [
+        "idle_se_zone_upper_lat.png",
+        "idle_se_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_tiger.png",
+        "idle_se_zone_upper_lat.png",
+        "idle_se_body.png"
+      ],
+      "sha256": "f2dc2646f8a3e9b0b871534a55c069a2c7ae669254640da3c5d5be4f71ae0b00",
+      "qc": {
+        "alphaPixels": 7693,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 234,
+          "minY": 440,
+          "maxX": 681,
+          "maxY": 668
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_dorsal_brindle.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "dorsal",
+      "texture": "brindle",
+      "rgbSource": "idle_se_tex_brindle.png",
+      "masks": [
+        "idle_se_zone_dorsal.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_brindle.png",
+        "idle_se_zone_dorsal.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "f6d611b196f9c130bd698ea5d9099d69bbdb6c01236b60c1bfd1c821d1f03735",
+      "qc": {
+        "alphaPixels": 5332,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 202,
+          "minY": 397,
+          "maxX": 646,
+          "maxY": 666
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 46
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_dorsal_solid.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "dorsal",
+      "texture": "solid",
+      "rgbSource": "idle_se_tex_solid.png",
+      "masks": [
+        "idle_se_zone_dorsal.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_solid.png",
+        "idle_se_zone_dorsal.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "37376cfcaaa84458b1847e2712d3f8d948c2f4242dc2b60bd7a72bca5d46b6b6",
+      "qc": {
+        "alphaPixels": 19333,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 195,
+          "minY": 394,
+          "maxX": 678,
+          "maxY": 667
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 219
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_dorsal_tiger.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "dorsal",
+      "texture": "tiger",
+      "rgbSource": "idle_se_tex_tiger.png",
+      "masks": [
+        "idle_se_zone_dorsal.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_tiger.png",
+        "idle_se_zone_dorsal.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "8c3119f58843253a915c0cffea5f97b2a46774108e8117aae3fc6deac6568d27",
+      "qc": {
+        "alphaPixels": 7256,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 202,
+          "minY": 397,
+          "maxX": 678,
+          "maxY": 662
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 44
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_limbs_noise_high.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "limbs",
+      "texture": "noise_high",
+      "rgbSource": "idle_se_tex_noise_high.png",
+      "masks": [
+        "idle_se_zone_limbs.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_noise_high.png",
+        "idle_se_zone_limbs.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "94e136cd51a0dd0052e178f5d729554229f3e6b83d6316cc81da8ab5ead7a03a",
+      "qc": {
+        "alphaPixels": 34515,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 224,
+          "minY": 367,
+          "maxX": 681,
+          "maxY": 790
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_limbs_noise_low.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "limbs",
+      "texture": "noise_low",
+      "rgbSource": "idle_se_tex_noise_low.png",
+      "masks": [
+        "idle_se_zone_limbs.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_noise_low.png",
+        "idle_se_zone_limbs.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "9a972a1bb34252671a32b6cec43038536aa2fb436f0137df9a0de2c66c8c20a0",
+      "qc": {
+        "alphaPixels": 15599,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 224,
+          "minY": 367,
+          "maxX": 681,
+          "maxY": 779
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_lower_lat_brindle.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "lower_lat",
+      "texture": "brindle",
+      "rgbSource": "idle_se_tex_brindle.png",
+      "masks": [
+        "idle_se_zone_lower_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_brindle.png",
+        "idle_se_zone_lower_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "c748b378facd5799abf05cd1956c5cb09ae7569c769ee20215258cb8e3d158b5",
+      "qc": {
+        "alphaPixels": 2808,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 236,
+          "minY": 463,
+          "maxX": 681,
+          "maxY": 790
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 466
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_lower_lat_noise_high.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "lower_lat",
+      "texture": "noise_high",
+      "rgbSource": "idle_se_tex_noise_high.png",
+      "masks": [
+        "idle_se_zone_lower_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_noise_high.png",
+        "idle_se_zone_lower_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "b2db3903f5dc96944da4f1fe29c1e5d31a2ca24c34ae0c790beda31c995257c7",
+      "qc": {
+        "alphaPixels": 8375,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 234,
+          "minY": 463,
+          "maxX": 681,
+          "maxY": 790
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 1695
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_lower_lat_noise_med.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "lower_lat",
+      "texture": "noise_med",
+      "rgbSource": "idle_se_tex_noise_med.png",
+      "masks": [
+        "idle_se_zone_lower_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_noise_med.png",
+        "idle_se_zone_lower_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "eb780cc7f8032e6d3ce19679bdd8d879fd64f2534f5c9ec29cbdb71572b68b3f",
+      "qc": {
+        "alphaPixels": 7220,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 234,
+          "minY": 463,
+          "maxX": 681,
+          "maxY": 790
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 1627
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_lower_lat_tiger.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "lower_lat",
+      "texture": "tiger",
+      "rgbSource": "idle_se_tex_tiger.png",
+      "masks": [
+        "idle_se_zone_lower_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_tiger.png",
+        "idle_se_zone_lower_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "b13e4728c5aa14cc86d1ebd1df52c92c62a35e04dfad09eebc90f457a2e6e7e9",
+      "qc": {
+        "alphaPixels": 4869,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 236,
+          "minY": 463,
+          "maxX": 681,
+          "maxY": 790
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 599
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_upper_lat_brindle.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "upper_lat",
+      "texture": "brindle",
+      "rgbSource": "idle_se_tex_brindle.png",
+      "masks": [
+        "idle_se_zone_upper_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_brindle.png",
+        "idle_se_zone_upper_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "c5abba0bd32c8f30f8d4fdb558a18af36d77eba0511e14e8bc2fb1bc8dcde28c",
+      "qc": {
+        "alphaPixels": 5023,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 234,
+          "minY": 440,
+          "maxX": 680,
+          "maxY": 666
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_upper_lat_flame.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "upper_lat",
+      "texture": "flame",
+      "rgbSource": "idle_se_tex_flame.png",
+      "masks": [
+        "idle_se_zone_upper_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_flame.png",
+        "idle_se_zone_upper_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "b1088f05d444b4cf256eaba724ddb83bde5fdc745f1350e4a85b84ce57ec65d8",
+      "qc": {
+        "alphaPixels": 12642,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 232,
+          "minY": 440,
+          "maxX": 681,
+          "maxY": 670
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_upper_lat_noise_high.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "upper_lat",
+      "texture": "noise_high",
+      "rgbSource": "idle_se_tex_noise_high.png",
+      "masks": [
+        "idle_se_zone_upper_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_noise_high.png",
+        "idle_se_zone_upper_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "4bc66aea7222d922ff1b5c1c74553b3b60e797ecf1452f9c515340d44db9fedc",
+      "qc": {
+        "alphaPixels": 18412,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 232,
+          "minY": 440,
+          "maxX": 681,
+          "maxY": 672
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 35
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_upper_lat_solid.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "upper_lat",
+      "texture": "solid",
+      "rgbSource": "idle_se_tex_solid.png",
+      "masks": [
+        "idle_se_zone_upper_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_solid.png",
+        "idle_se_zone_upper_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "10593a1fa4e8abbb1e33845a47817c54d607db1247f0c6fbaca2139281b053d8",
+      "qc": {
+        "alphaPixels": 18736,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 232,
+          "minY": 440,
+          "maxX": 681,
+          "maxY": 672
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 35
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_pattern_upper_lat_tiger.png",
+      "kind": "zone-texture",
+      "pose": "idle_se_tail_up",
+      "zone": "upper_lat",
+      "texture": "tiger",
+      "rgbSource": "idle_se_tex_tiger.png",
+      "masks": [
+        "idle_se_zone_upper_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_tex_tiger.png",
+        "idle_se_zone_upper_lat.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "f2dc2646f8a3e9b0b871534a55c069a2c7ae669254640da3c5d5be4f71ae0b00",
+      "qc": {
+        "alphaPixels": 7693,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 234,
+          "minY": 440,
+          "maxX": 681,
+          "maxY": 668
+        },
+        "straightTailLeakPixels": 0,
+        "removedStraightOnlyPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_portholes.png",
+      "kind": "tail-up-layer-clip",
+      "pose": "idle_se_tail_up",
+      "layerKind": "trait",
+      "trait": "portholes",
+      "rgbSource": "idle_se_portholes.png",
+      "masks": [
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_portholes.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "78283bf8ba2a36af297b84c4725939361f58bc58f2c0da90781adb1af22425cb",
+      "qc": {
+        "alphaPixels": 1486,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 292,
+          "minY": 338,
+          "maxX": 808,
+          "maxY": 502
+        },
+        "straightTailLeakPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_reverse_pinstripe.png",
+      "kind": "tail-up-layer-clip",
+      "pose": "idle_se_tail_up",
+      "layerKind": "trait",
+      "trait": "reverse_pinstripe",
+      "rgbSource": "idle_se_reverse_pinstripe.png",
+      "masks": [
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_reverse_pinstripe.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "6be908f6a3b731ab5bf1fa0421030a694835e339047a87ff75a3ed8c09a265b8",
+      "qc": {
+        "alphaPixels": 9715,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 201,
+          "minY": 381,
+          "maxX": 681,
+          "maxY": 732
+        },
+        "straightTailLeakPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_spots_super_dalmatian.png",
+      "kind": "tail-up-layer-clip",
+      "pose": "idle_se_tail_up",
+      "layerKind": "trait",
+      "trait": "super_dalmatian",
+      "rgbSource": "idle_se_spots_super_dalmatian.png",
+      "masks": [
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_spots_super_dalmatian.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "5b7baa70d3682ac31074761c0899aa6ee66db9443e83778764ff6d59fffb9d60",
+      "qc": {
+        "alphaPixels": 4729,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 308,
+          "minY": 330,
+          "maxX": 816,
+          "maxY": 734
+        },
+        "straightTailLeakPixels": 0
+      }
+    },
+    {
+      "filename": "idle_se_tail_up_white_fringe.png",
+      "kind": "tail-up-layer-clip",
+      "pose": "idle_se_tail_up",
+      "layerKind": "trait",
+      "trait": "white_fringe",
+      "rgbSource": "idle_se_white_fringe.png",
+      "masks": [
+        "idle_se_tail_up_body.png"
+      ],
+      "inputs": [
+        "idle_se_white_fringe.png",
+        "idle_se_tail_up_body.png"
+      ],
+      "sha256": "082da5e82d148f7c9e222db3a939023c5400b635014a94d7e1f25a6132807be4",
+      "qc": {
+        "alphaPixels": 2510,
+        "alphaMismatchPixels": 0,
+        "outsideIntersectionPixels": 0,
+        "visibleRgbMismatchPixels": 0,
+        "transparentRgbPixels": 0,
+        "bbox": {
+          "minX": 355,
+          "minY": 659,
+          "maxX": 683,
+          "maxY": 791
+        },
+        "straightTailLeakPixels": 0
+      }
+    }
+  ]
+}
