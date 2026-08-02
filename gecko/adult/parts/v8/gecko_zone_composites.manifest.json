@@ -8,7 +8,7 @@
     "height": 1024
   },
   "publishedSourceContract": {
-    "count": 37,
+    "count": 28,
     "dimensions": {
       "width": 1024,
       "height": 1024
@@ -21,7 +21,7 @@
     "count": 32,
     "zoneTextureCount": 28,
     "tailUpLayerClipCount": 4,
-    "totalPublishedPngCount": 69
+    "totalPublishedPngCount": 60
   },
   "sourceUsage": {
     "runtime-active": [
@@ -53,19 +53,6 @@
       "idle_se_zone_limbs.png",
       "idle_se_zone_lower_lat.png",
       "idle_se_zone_upper_lat.png"
-    ],
-    "authoring-only": [
-      "idle_se_zone_head.png"
-    ],
-    "fail-closed-walk-reference": [
-      "walk_se_1_belly.png",
-      "walk_se_1_body.png",
-      "walk_se_1_lineart_crowned.png",
-      "walk_se_1_lineart_normal.png",
-      "walk_se_2_belly.png",
-      "walk_se_2_body.png",
-      "walk_se_2_lineart_crowned.png",
-      "walk_se_2_lineart_normal.png"
     ]
   },
   "approvedSources": [
@@ -470,22 +457,6 @@
       "usage": "runtime-active"
     },
     {
-      "filename": "idle_se_zone_head.png",
-      "sourcePath": "assets/gecko/adult/parts/idle_se_zone_head.png",
-      "outputPath": "gecko/adult/parts/v8/idle_se_zone_head.png",
-      "sha256": "6e668170ffc35cc8cc67a78f24d91b4ef2b21a2ca927d5686b6617cac651be17",
-      "byteLength": 9207,
-      "format": "png",
-      "width": 1024,
-      "height": 1024,
-      "channels": 4,
-      "hasAlpha": true,
-      "space": "srgb",
-      "mode": "RGBA",
-      "byteIdentical": true,
-      "usage": "authoring-only"
-    },
-    {
       "filename": "idle_se_zone_limbs.png",
       "sourcePath": "assets/gecko/adult/parts/idle_se_zone_limbs.png",
       "outputPath": "gecko/adult/parts/v8/idle_se_zone_limbs.png",
@@ -532,134 +503,6 @@
       "mode": "RGBA",
       "byteIdentical": true,
       "usage": "runtime-active"
-    },
-    {
-      "filename": "walk_se_1_belly.png",
-      "sourcePath": "assets/gecko/adult/parts/walk_se_1_belly.png",
-      "outputPath": "gecko/adult/parts/v8/walk_se_1_belly.png",
-      "sha256": "052e8e74a993294536cba9f008114f9ab25aaaa88dfe91e399111a991584a033",
-      "byteLength": 15928,
-      "format": "png",
-      "width": 1024,
-      "height": 1024,
-      "channels": 4,
-      "hasAlpha": true,
-      "space": "srgb",
-      "mode": "RGBA",
-      "byteIdentical": true,
-      "usage": "fail-closed-walk-reference"
-    },
-    {
-      "filename": "walk_se_1_body.png",
-      "sourcePath": "assets/gecko/adult/parts/walk_se_1_body.png",
-      "outputPath": "gecko/adult/parts/v8/walk_se_1_body.png",
-      "sha256": "d78748351001859df748390484119c5c4c85638614b018e62ba85faa6ea2cc4c",
-      "byteLength": 17257,
-      "format": "png",
-      "width": 1024,
-      "height": 1024,
-      "channels": 4,
-      "hasAlpha": true,
-      "space": "srgb",
-      "mode": "RGBA",
-      "byteIdentical": true,
-      "usage": "fail-closed-walk-reference"
-    },
-    {
-      "filename": "walk_se_1_lineart_crowned.png",
-      "sourcePath": "assets/gecko/adult/parts/walk_se_1_lineart_crowned.png",
-      "outputPath": "gecko/adult/parts/v8/walk_se_1_lineart_crowned.png",
-      "sha256": "966690c5e8e55a88eb36ce9b92f040b6918926f255a5c3b3172de18788c490e6",
-      "byteLength": 1035627,
-      "format": "png",
-      "width": 1024,
-      "height": 1024,
-      "channels": 4,
-      "hasAlpha": true,
-      "space": "srgb",
-      "mode": "RGBA",
-      "byteIdentical": true,
-      "usage": "fail-closed-walk-reference"
-    },
-    {
-      "filename": "walk_se_1_lineart_normal.png",
-      "sourcePath": "assets/gecko/adult/parts/walk_se_1_lineart_normal.png",
-      "outputPath": "gecko/adult/parts/v8/walk_se_1_lineart_normal.png",
-      "sha256": "849c7931e668f73ae89c3fd0672ce5ff4a3ed4d301e9c940f8cb9c92f30ed69b",
-      "byteLength": 991705,
-      "format": "png",
-      "width": 1024,
-      "height": 1024,
-      "channels": 4,
-      "hasAlpha": true,
-      "space": "srgb",
-      "mode": "RGBA",
-      "byteIdentical": true,
-      "usage": "fail-closed-walk-reference"
-    },
-    {
-      "filename": "walk_se_2_belly.png",
-      "sourcePath": "assets/gecko/adult/parts/walk_se_2_belly.png",
-      "outputPath": "gecko/adult/parts/v8/walk_se_2_belly.png",
-      "sha256": "e4cabc3a5824dcffe9f358b07a93eebf818259401940467ec8ff545440c20fb1",
-      "byteLength": 21028,
-      "format": "png",
-      "width": 1024,
-      "height": 1024,
-      "channels": 4,
-      "hasAlpha": true,
-      "space": "srgb",
-      "mode": "RGBA",
-      "byteIdentical": true,
-      "usage": "fail-closed-walk-reference"
-    },
-    {
-      "filename": "walk_se_2_body.png",
-      "sourcePath": "assets/gecko/adult/parts/walk_se_2_body.png",
-      "outputPath": "gecko/adult/parts/v8/walk_se_2_body.png",
-      "sha256": "ec347738d3edd2b64ba57850c85154ce8942259b829fabdf4dbfe94076efc4d4",
-      "byteLength": 22889,
-      "format": "png",
-      "width": 1024,
-      "height": 1024,
-      "channels": 4,
-      "hasAlpha": true,
-      "space": "srgb",
-      "mode": "RGBA",
-      "byteIdentical": true,
-      "usage": "fail-closed-walk-reference"
-    },
-    {
-      "filename": "walk_se_2_lineart_crowned.png",
-      "sourcePath": "assets/gecko/adult/parts/walk_se_2_lineart_crowned.png",
-      "outputPath": "gecko/adult/parts/v8/walk_se_2_lineart_crowned.png",
-      "sha256": "98832d288450fc6cbd588e4e9cbac316c1ef6c457633abecae49c50d5b7e21ff",
-      "byteLength": 1144039,
-      "format": "png",
-      "width": 1024,
-      "height": 1024,
-      "channels": 4,
-      "hasAlpha": true,
-      "space": "srgb",
-      "mode": "RGBA",
-      "byteIdentical": true,
-      "usage": "fail-closed-walk-reference"
-    },
-    {
-      "filename": "walk_se_2_lineart_normal.png",
-      "sourcePath": "assets/gecko/adult/parts/walk_se_2_lineart_normal.png",
-      "outputPath": "gecko/adult/parts/v8/walk_se_2_lineart_normal.png",
-      "sha256": "f415b673da3f397ec1e9a66785bf7ab02c61efae1ffb6480065a7c751499a5ce",
-      "byteLength": 1034739,
-      "format": "png",
-      "width": 1024,
-      "height": 1024,
-      "channels": 4,
-      "hasAlpha": true,
-      "space": "srgb",
-      "mode": "RGBA",
-      "byteIdentical": true,
-      "usage": "fail-closed-walk-reference"
     }
   ],
   "excludedSources": [
@@ -673,7 +516,127 @@
       "mode": "RGBA",
       "space": "srgb",
       "published": false,
+      "disposition": "excluded",
       "reason": "pose/anchor incompatible; full seated character"
+    }
+  ],
+  "deferredSources": [
+    {
+      "filename": "idle_se_zone_head.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_zone_head.png",
+      "sha256": "6e668170ffc35cc8cc67a78f24d91b4ef2b21a2ca927d5686b6617cac651be17",
+      "byteLength": 9207,
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "space": "srgb",
+      "published": false,
+      "disposition": "deferred",
+      "reason": "current morph/output reachability 0; authoring-only"
+    },
+    {
+      "filename": "walk_se_1_belly.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_1_belly.png",
+      "sha256": "052e8e74a993294536cba9f008114f9ab25aaaa88dfe91e399111a991584a033",
+      "byteLength": 15928,
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "space": "srgb",
+      "published": false,
+      "disposition": "deferred",
+      "reason": "embedded opaque grid; runtime walking pose fail-closed"
+    },
+    {
+      "filename": "walk_se_1_body.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_1_body.png",
+      "sha256": "d78748351001859df748390484119c5c4c85638614b018e62ba85faa6ea2cc4c",
+      "byteLength": 17257,
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "space": "srgb",
+      "published": false,
+      "disposition": "deferred",
+      "reason": "embedded opaque grid; runtime walking pose fail-closed"
+    },
+    {
+      "filename": "walk_se_1_lineart_crowned.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_1_lineart_crowned.png",
+      "sha256": "966690c5e8e55a88eb36ce9b92f040b6918926f255a5c3b3172de18788c490e6",
+      "byteLength": 1035627,
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "space": "srgb",
+      "published": false,
+      "disposition": "deferred",
+      "reason": "embedded opaque grid; runtime walking pose fail-closed"
+    },
+    {
+      "filename": "walk_se_1_lineart_normal.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_1_lineart_normal.png",
+      "sha256": "849c7931e668f73ae89c3fd0672ce5ff4a3ed4d301e9c940f8cb9c92f30ed69b",
+      "byteLength": 991705,
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "space": "srgb",
+      "published": false,
+      "disposition": "deferred",
+      "reason": "embedded opaque grid; runtime walking pose fail-closed"
+    },
+    {
+      "filename": "walk_se_2_belly.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_2_belly.png",
+      "sha256": "e4cabc3a5824dcffe9f358b07a93eebf818259401940467ec8ff545440c20fb1",
+      "byteLength": 21028,
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "space": "srgb",
+      "published": false,
+      "disposition": "deferred",
+      "reason": "embedded opaque grid; runtime walking pose fail-closed"
+    },
+    {
+      "filename": "walk_se_2_body.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_2_body.png",
+      "sha256": "ec347738d3edd2b64ba57850c85154ce8942259b829fabdf4dbfe94076efc4d4",
+      "byteLength": 22889,
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "space": "srgb",
+      "published": false,
+      "disposition": "deferred",
+      "reason": "embedded opaque grid; runtime walking pose fail-closed"
+    },
+    {
+      "filename": "walk_se_2_lineart_crowned.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_2_lineart_crowned.png",
+      "sha256": "98832d288450fc6cbd588e4e9cbac316c1ef6c457633abecae49c50d5b7e21ff",
+      "byteLength": 1144039,
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "space": "srgb",
+      "published": false,
+      "disposition": "deferred",
+      "reason": "embedded opaque grid; runtime walking pose fail-closed"
+    },
+    {
+      "filename": "walk_se_2_lineart_normal.png",
+      "sourcePath": "assets/gecko/adult/parts/walk_se_2_lineart_normal.png",
+      "sha256": "f415b673da3f397ec1e9a66785bf7ab02c61efae1ffb6480065a7c751499a5ce",
+      "byteLength": 1034739,
+      "width": 1024,
+      "height": 1024,
+      "mode": "RGBA",
+      "space": "srgb",
+      "published": false,
+      "disposition": "deferred",
+      "reason": "embedded opaque grid; runtime walking pose fail-closed"
     }
   ],
   "approvedInputs": {
@@ -702,18 +665,9 @@
     "idle_se_tex_tiger.png": "f2630d48193dc15ab2bf0160dd39d2e46d597fed6fe8e2810f685f13e94546f9",
     "idle_se_white_fringe.png": "0798519dd82e2c9688053bc68adb3a18fb404ef425d5867b1f76c6b1f2f413bd",
     "idle_se_zone_dorsal.png": "7ecf370b8fbf021acb83c82ec0f48ece5588383873f2809ab554351968617f88",
-    "idle_se_zone_head.png": "6e668170ffc35cc8cc67a78f24d91b4ef2b21a2ca927d5686b6617cac651be17",
     "idle_se_zone_limbs.png": "0136182a7c8ff4688388f76507ac8c8c259bf34fff001052b3cd0b74bdacca3a",
     "idle_se_zone_lower_lat.png": "cb1a2ab1894239d2a12fbcb29254a2f86cdffad9f928db44698cd151c6366fda",
-    "idle_se_zone_upper_lat.png": "9b8feac084fc87b7a8e6968de3c33a0cf9349e967d81b1cb66f009c9e028f71b",
-    "walk_se_1_belly.png": "052e8e74a993294536cba9f008114f9ab25aaaa88dfe91e399111a991584a033",
-    "walk_se_1_body.png": "d78748351001859df748390484119c5c4c85638614b018e62ba85faa6ea2cc4c",
-    "walk_se_1_lineart_crowned.png": "966690c5e8e55a88eb36ce9b92f040b6918926f255a5c3b3172de18788c490e6",
-    "walk_se_1_lineart_normal.png": "849c7931e668f73ae89c3fd0672ce5ff4a3ed4d301e9c940f8cb9c92f30ed69b",
-    "walk_se_2_belly.png": "e4cabc3a5824dcffe9f358b07a93eebf818259401940467ec8ff545440c20fb1",
-    "walk_se_2_body.png": "ec347738d3edd2b64ba57850c85154ce8942259b829fabdf4dbfe94076efc4d4",
-    "walk_se_2_lineart_crowned.png": "98832d288450fc6cbd588e4e9cbac316c1ef6c457633abecae49c50d5b7e21ff",
-    "walk_se_2_lineart_normal.png": "f415b673da3f397ec1e9a66785bf7ab02c61efae1ffb6480065a7c751499a5ce"
+    "idle_se_zone_upper_lat.png": "9b8feac084fc87b7a8e6968de3c33a0cf9349e967d81b1cb66f009c9e028f71b"
   },
   "tailUpLayerAudit": [
     {
