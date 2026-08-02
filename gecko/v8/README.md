@@ -13,8 +13,9 @@ seed variation must be applied without substituting a different Gecko.
 - Dimensions: base `512x512`; action frames `256x256`; all RGBA PNG
 
 The complete per-file hash contract is `SHA256SUMS` in this directory. The app
-repository's canonical runtime manifest and asset commit pin are downstream
-contracts and are intentionally left for a separate integration.
+repository pins this runtime namespace to asset merge commit `16592ad2` and
+verifies the local, source, and published hashes. Later root-level branding
+commits do not alter that immutable 25-file runtime tree.
 
 ## RGB-only chroma cleanup v1
 
@@ -32,6 +33,7 @@ runtime frames.
 
 The active `gecko/v8` runtime namespace contains no legacy Gecko individual.
 Git history is the audit record; restoring `gecko/adult`, flat growth-stage
-sprites, or `geckos/iso` beneath this namespace is forbidden. Branding icons
-and unused historical backgrounds elsewhere in the asset repository are not
-covered by this 25-file runtime contract and are tracked for separate removal.
+sprites, or `geckos/iso` beneath this namespace is forbidden. Root branding
+compatibility paths now use the same approved actor and are documented in
+`BRANDING.md`; the unused `backgrounds/room_bg.png` with baked older actors was
+removed.
