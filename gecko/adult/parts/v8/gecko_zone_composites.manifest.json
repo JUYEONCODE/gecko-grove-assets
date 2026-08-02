@@ -7,6 +7,67 @@
     "width": 1024,
     "height": 1024
   },
+  "publishedSourceContract": {
+    "count": 37,
+    "dimensions": {
+      "width": 1024,
+      "height": 1024
+    },
+    "mode": "RGBA",
+    "space": "srgb",
+    "dimensionExceptions": []
+  },
+  "generatedOutputContract": {
+    "count": 32,
+    "zoneTextureCount": 28,
+    "tailUpLayerClipCount": 4,
+    "totalPublishedPngCount": 69
+  },
+  "sourceUsage": {
+    "runtime-active": [
+      "idle_se_belly.png",
+      "idle_se_body.png",
+      "idle_se_eye_iris.png",
+      "idle_se_kneecaps.png",
+      "idle_se_lineart_normal.png",
+      "idle_se_pinstripe.png",
+      "idle_se_pinstripe_dashed.png",
+      "idle_se_pinstripe_tail.png",
+      "idle_se_portholes.png",
+      "idle_se_reverse_pinstripe.png",
+      "idle_se_spots_dalmatian.png",
+      "idle_se_spots_super_dalmatian.png",
+      "idle_se_tail_up_belly.png",
+      "idle_se_tail_up_body.png",
+      "idle_se_tail_up_lineart_normal.png",
+      "idle_se_tail_up_zone_tail.png",
+      "idle_se_tex_brindle.png",
+      "idle_se_tex_flame.png",
+      "idle_se_tex_noise_high.png",
+      "idle_se_tex_noise_low.png",
+      "idle_se_tex_noise_med.png",
+      "idle_se_tex_solid.png",
+      "idle_se_tex_tiger.png",
+      "idle_se_white_fringe.png",
+      "idle_se_zone_dorsal.png",
+      "idle_se_zone_limbs.png",
+      "idle_se_zone_lower_lat.png",
+      "idle_se_zone_upper_lat.png"
+    ],
+    "authoring-only": [
+      "idle_se_zone_head.png"
+    ],
+    "fail-closed-walk-reference": [
+      "walk_se_1_belly.png",
+      "walk_se_1_body.png",
+      "walk_se_1_lineart_crowned.png",
+      "walk_se_1_lineart_normal.png",
+      "walk_se_2_belly.png",
+      "walk_se_2_body.png",
+      "walk_se_2_lineart_crowned.png",
+      "walk_se_2_lineart_normal.png"
+    ]
+  },
   "approvedSources": [
     {
       "filename": "idle_se_belly.png",
@@ -21,7 +82,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_body.png",
@@ -36,7 +98,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_eye_iris.png",
@@ -51,7 +114,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_kneecaps.png",
@@ -66,22 +130,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
-    },
-    {
-      "filename": "idle_se_lineart_crowned.png",
-      "sourcePath": "assets/gecko/adult/parts/idle_se_lineart_crowned.png",
-      "outputPath": "gecko/adult/parts/v8/idle_se_lineart_crowned.png",
-      "sha256": "373aa44b8fbfa9927482b8d024879e2d3f5fc9431803456e46136ce032add665",
-      "byteLength": 90134,
-      "format": "png",
-      "width": 512,
-      "height": 512,
-      "channels": 4,
-      "hasAlpha": true,
-      "space": "srgb",
-      "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_lineart_normal.png",
@@ -96,7 +146,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_pinstripe_dashed.png",
@@ -111,7 +162,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_pinstripe_tail.png",
@@ -126,7 +178,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_pinstripe.png",
@@ -141,7 +194,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_portholes.png",
@@ -156,7 +210,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_reverse_pinstripe.png",
@@ -171,7 +226,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_spots_dalmatian.png",
@@ -186,7 +242,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_spots_super_dalmatian.png",
@@ -201,7 +258,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tail_up_belly.png",
@@ -216,7 +274,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tail_up_body.png",
@@ -231,7 +290,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tail_up_lineart_normal.png",
@@ -246,7 +306,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tail_up_zone_tail.png",
@@ -261,7 +322,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tex_brindle.png",
@@ -276,7 +338,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tex_flame.png",
@@ -291,7 +354,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tex_noise_high.png",
@@ -306,7 +370,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tex_noise_low.png",
@@ -321,7 +386,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tex_noise_med.png",
@@ -336,7 +402,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tex_solid.png",
@@ -351,7 +418,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_tex_tiger.png",
@@ -366,7 +434,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_white_fringe.png",
@@ -381,7 +450,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_zone_dorsal.png",
@@ -396,7 +466,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_zone_head.png",
@@ -411,7 +482,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "authoring-only"
     },
     {
       "filename": "idle_se_zone_limbs.png",
@@ -426,7 +498,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_zone_lower_lat.png",
@@ -441,7 +514,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "idle_se_zone_upper_lat.png",
@@ -456,7 +530,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "runtime-active"
     },
     {
       "filename": "walk_se_1_belly.png",
@@ -471,7 +546,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "fail-closed-walk-reference"
     },
     {
       "filename": "walk_se_1_body.png",
@@ -486,7 +562,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "fail-closed-walk-reference"
     },
     {
       "filename": "walk_se_1_lineart_crowned.png",
@@ -501,7 +578,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "fail-closed-walk-reference"
     },
     {
       "filename": "walk_se_1_lineart_normal.png",
@@ -516,7 +594,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "fail-closed-walk-reference"
     },
     {
       "filename": "walk_se_2_belly.png",
@@ -531,7 +610,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "fail-closed-walk-reference"
     },
     {
       "filename": "walk_se_2_body.png",
@@ -546,7 +626,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "fail-closed-walk-reference"
     },
     {
       "filename": "walk_se_2_lineart_crowned.png",
@@ -561,7 +642,8 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "fail-closed-walk-reference"
     },
     {
       "filename": "walk_se_2_lineart_normal.png",
@@ -576,7 +658,22 @@
       "hasAlpha": true,
       "space": "srgb",
       "mode": "RGBA",
-      "byteIdentical": true
+      "byteIdentical": true,
+      "usage": "fail-closed-walk-reference"
+    }
+  ],
+  "excludedSources": [
+    {
+      "filename": "idle_se_lineart_crowned.png",
+      "sourcePath": "assets/gecko/adult/parts/idle_se_lineart_crowned.png",
+      "sha256": "373aa44b8fbfa9927482b8d024879e2d3f5fc9431803456e46136ce032add665",
+      "byteLength": 90134,
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "space": "srgb",
+      "published": false,
+      "reason": "pose/anchor incompatible; full seated character"
     }
   ],
   "approvedInputs": {
@@ -584,7 +681,6 @@
     "idle_se_body.png": "1841008170cc50ad555cc1265c0cf34cb78419f2862622be52ffca0cc743b7e6",
     "idle_se_eye_iris.png": "cda2f3cdc9ef7b619dd3f4cdd91f6f1a3afd76a3646ba098012844f20779d202",
     "idle_se_kneecaps.png": "177cf25ecdc1fed0635f831cf86e41949b024b39dfe81ed2dd7f62bebb2c8dc5",
-    "idle_se_lineart_crowned.png": "373aa44b8fbfa9927482b8d024879e2d3f5fc9431803456e46136ce032add665",
     "idle_se_lineart_normal.png": "52d31eb4a3392409818b29a2b0aa0bf846b47f356e403db5cade1b2cf540dee4",
     "idle_se_pinstripe.png": "0ae4909acf2fbdb872ca187e8180b6d26c61efeb80317ced734c61d7a475b671",
     "idle_se_pinstripe_dashed.png": "8c2d7e91c2ca7353c34391f24abe31b36614d2d357ffb990da8b655ff02e5875",
@@ -1799,5 +1895,9 @@
         "straightTailLeakPixels": 0
       }
     }
-  ]
+  ],
+  "outputKindCounts": {
+    "zone-texture": 28,
+    "tail-up-layer-clip": 4
+  }
 }
